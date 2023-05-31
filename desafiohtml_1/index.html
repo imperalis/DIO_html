@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01 - Blogpost HTML</title>
+</head>
+<body>
+    <h1>Conhecendo as principais tags do HTML: elementos essenciais na construção de páginas web.</h1>
+    <hr />
+
+    <h2 id="indice">Índice</h2>
+        <p>Selecione um tópico que deseja ler sobre: </p>
+        <ul>
+            <li><a href="#tag-html">O início de tudo, a tag HTML</a></li>
+            <li><a href="#tag-head">A tag Head e suas funcionalidades</a></li>
+            <li><a href="#tag-body">O <code>&lt;body&gt;</code> da página e seu conteúdo</a></li>
+            <li><a href="#tag-h">As tags de cabeçalho <code>h1 - h6</code></a></li>
+            <li><a href="#tag-p">A tag <code>&lt;p&gt;</code></a></li>
+            <li><a href="#tag-a">Âncoras e Links</a></li>
+            <li><a href="#tag-img">Inserção de imagens</a></li>
+        </ul>
+
+    <!--- tag html --->
+    <h2 id="tag-html">O início de tudo, a tag HTML</h2> 
+    <a href="#indice">▲ voltar ao índice</a>
+    
+    <p>A tag <code>&lt;html&gt;</code> é o ponto de partida de qualquer página HTML. Ela engloba todos os elementos presentes no documento, indicando o início e o fim do código HTML. Quando você inicia um documento HTML, a primeira tag que você deve escrever é <code>&lt;html&gt;</code>, seguida pela tag <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>. A tag <code>&lt;html&gt;</code> serve como o contêiner principal para o seu código HTML, fornecendo a estrutura básica para o conteúdo que será exibido no navegador. Dentro da tag <code>&lt;html&gt;</code>, você encontrará todas as outras tags necessárias para definir a estrutura, estilo e comportamento da sua página web.</p>
+
+    <!--- tag head --->
+    <h2 id="tag-head">A tag Head e suas funcionalidades</h2>
+    <a href="#indice">▲ voltar ao índice</a>
+    
+    <p>A tag <code>&lt;head&gt;</code> é utilizada para definir informações sobre o documento HTML. Embora não seja visível na página exibida no navegador, o conteúdo inserido dentro da tag <code>&lt;head&gt;</code> desempenha um papel crucial no funcionamento e na aparência do site. Por exemplo, é dentro da tag <code>&lt;head&gt;</code> que você define o título da página, que é exibido na aba do navegador. Você também pode adicionar links para folhas de estilo CSS, que controlam a aparência e o layout do seu site, e scripts JavaScript, que fornecem funcionalidades interativas. Além disso, você pode especificar metadados, como a codificação de caracteres, palavras-chave relevantes para mecanismos de busca e descrições do conteúdo da página.</p>
+
+    <!--- tag body --->
+    <h2 id="tag-body">O <code>&lt;body&gt;</code> da página e seu conteúdo</h2>
+    <a href="#indice">▲ voltar ao índice</a>
+
+    <p>A tag <code>&lt;body&gt;</code> contém o conteúdo principal da página, que é exibido no navegador. É dentro da tag <code>&lt;body&gt;</code> que você estrutura e organiza o conteúdo visível para o usuário. Aqui, você pode inserir texto, imagens, vídeos, tabelas e outros elementos que serão exibidos na página. Por exemplo, se você deseja criar um parágrafo de texto, você usará a tag <code>&lt;p&gt;</code> dentro da tag <code>&lt;body&gt;</code>. Da mesma forma, se você quiser exibir uma imagem, usará a tag <code>&lt;img&gt;</code>. A tag <code>&lt;body&gt;</code> define a área visível da página e é o local onde os visitantes do site interagem com o conteúdo que você criou.</p>
+
+    <!--- tag h1-h6 --->
+    <h2 id="tag-h">As tags de cabeçalho <code>&lt;h1&gt; - &lt;h6&gt;</code></h2>
+    <a href="#indice">▲ voltar ao índice</a>
+
+    <p>As tags <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> são usadas para definir os cabeçalhos em uma página web. Esses cabeçalhos fornecem uma hierarquia visualmente clara para o conteúdo, ajudando os leitores a identificar e navegar pelo texto. A tag <code>&lt;h1&gt;</code> é o cabeçalho mais importante e geralmente é usada para o título principal da página. Os cabeçalhos subsequentes, <code>&lt;h2&gt;</code> a <code>&lt;h6&gt;</code>, são usados para títulos e subtítulos de seções diferentes. Ao usar as tags de cabeçalho adequadamente, você cria uma estrutura organizada e legível para o conteúdo do seu site, melhorando a experiência do usuário.</p>
+
+    <!--- tag p --->
+    <h2 id="tag-p">A tag <code>&lt;p&gt;</code></h2>
+    <a href="#indice">▲ voltar ao índice</a>
+
+    <p>A tag <code>&lt;p&gt;</code> é usada para criar parágrafos de texto em uma página HTML. Ao inserir texto dentro da tag <code>&lt;p&gt;</code>, você cria um bloco de texto que é automaticamente formatado em um parágrafo. Os parágrafos são usados para organizar e separar o conteúdo textual, tornando-o mais legível e compreensível. Quando você insere um parágrafo de texto, o navegador exibirá uma linha em branco acima e abaixo do texto, criando uma separação visual entre os parágrafos adjacentes. Usar a tag <code>&lt;p&gt;</code> é uma prática recomendada para manter o texto estruturado e facilitar a leitura dos visitantes do site.</p>
+
+    <!--- tag a --->
+    <h2 id="tag-a">Âncoras e Links</h2>
+    <a href="#indice">▲ voltar ao índice</a>
+
+    <p>A tag <code>&lt;a&gt;</code> é essencial para criar links em uma página web. Ela permite que os visitantes cliquem em um texto ou imagem e sejam redirecionados para outra página, um arquivo para download ou até mesmo para um local específico dentro da própria página. Para criar um link usando a tag <a>, você precisa especificar o endereço de destino no atributo "href". Por exemplo, se você quiser criar um link para uma página chamada "sobre.html", você usaria a seguinte estrutura: <code>&lt;a href="sobre.html"&gt;Texto do link&lt;/a&gt;</code>. Ao clicar no texto "Texto do link", o usuário será direcionado para a página "sobre.html". Os links são uma parte fundamental da navegação na web e permitem que os usuários acessem diferentes páginas e recursos, proporcionando uma experiência interativa e conectada.</p>
+
+    <!--- tag img --->
+    <h2 id="tag-img">Inserção de imagens</h2>
+    <a href="#indice">▲ voltar ao índice</a>
+
+    <p>A tag <code>&lt;img&gt;</code> é usada para inserir imagens em uma página HTML. Ela é extremamente útil para tornar o conteúdo visualmente atrativo e envolvente para os visitantes do site. Para utilizar a tag <code>&lt;img&gt;</code>, você precisa especificar o caminho ou URL da imagem no atributo "src" (source). Por exemplo: <code>&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem"&gt;</code>.</p>
+
+    <p>O atributo "src" indica o local onde a imagem está armazenada, seja no seu servidor ou em um recurso externo. É importante fornecer o caminho correto para que o navegador possa carregar a imagem corretamente. Além disso, é uma boa prática adicionar um texto alternativo ao atributo "alt" (alternative) para descrever a imagem. O texto alternativo é exibido caso a imagem não possa ser carregada ou para fins de acessibilidade, auxiliando usuários com deficiência visual a entender o conteúdo da imagem.</p>
+    
+    <p>Além do "src" e do "alt", existem outros atributos que podem ser usados com a tag <code>&lt;img&gt;</code>, como "width" (largura), "height" (altura) e "title" (título). Esses atributos permitem controlar o tamanho e a aparência da imagem, bem como adicionar informações adicionais para os usuários.</p>
+    
+    <p>Ao usar a tag <code>&lt;img&gt;</code> corretamente, você pode adicionar elementos visuais significativos ao seu site, como logotipos, ilustrações, fotografias e gráficos, enriquecendo a experiência visual dos visitantes e tornando o conteúdo mais atraente e impactante.</p>
+
+    <h2>Links de referências</h2>
+    <ul>
+        <li><a href="http://dio.me">DIO.me</a></li>
+        <li><a href="http://w3c.org">W3C</a></li>
+    </ul>
+</body>
+</html>
