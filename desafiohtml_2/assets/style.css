@@ -2,27 +2,36 @@ html, body {
     font-family: 'Geologica', sans-serif;
     margin: 0;
 }
+
 body {
-    background-color: #f1f1f1;
+    background-color: #fff;
     display: flex;
     justify-content: center;
 }
+
 .wrapper {
     width: 1500px;
     display: flex;
     margin: 0 auto;
     background-color: aquamarine;
 }
+
 .main {
     display: flex;
     flex-flow: column;
     width: 88%;
 }
+
+.barra{
+    border: 1px solid #019eb62a;
+}
+
 .menu {
     width: 12%;
     background-color: rgb(255, 255, 255);
-    padding: 10px 20px 0px;
+    padding: 10px 20px 0px 10px;
 }
+
 .menu ul, a{
     position: relative;
     display: unset;
@@ -33,45 +42,82 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
+.link:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #17a1e6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+a.link:hover:after{ 
+    transform: scaleX(1);
+}
+
 .menu a:hover{
     color:#004a83;
-    background-color: #f1f1f1;
 }
+
 .menu ul li{
-    padding: 40px 0px 5px 0px;
-    border-bottom: 1px solid #1a8fca;
+    padding: 20px 0px 20px 0px;
 }
-.menu img{
-    width: 8%;
-}
+
 .logo{
-    width: 10%;
-    padding: 30px 0px 0px 30px;
+    width: 65%;
+    padding: 15px 0px 0px 25px;
 }
+
 .logo-text{
     font-family: 'Cherry Bomb One', cursive;
     position: relative;
-    bottom: 12%;
-    left: 2%;
     text-decoration: none;
-    color: 1a8fca;
+    color: #1a8fca;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 100px;
+    bottom: 6%;
+    left:3%;
 }
+
 .header {
-    background-color: rgb(255, 255, 255);
-    min-height: 150px;
+    background: linear-gradient(#ffffff5b, #fff), url('banner.jpg');
+    min-height: 150px; 
 }
+
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
     font-weight: 300;
 }
+
 .footer {
     border-top: 1px solid #1a8fca;
     background-color: rgb(255, 255, 255);
     min-height: 150px;
     font-weight: 300;
     padding-top:20px;
+    text-align: center;
+}
+
+.tabela {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.tabela td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: #67b6e431;
+}
+
+.tabela tr:hover {
+    background-color: #1d8ec7;
+    color: white;
 }
